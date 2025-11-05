@@ -66,3 +66,19 @@ Computing Layer Similarity
       --output_dir ~/aryan/outputs/similarity_mats
   done
   ```
+
+Multilingual Global-MMLU
+------------------------
+- For bilingual/multilingual evaluation using CohereLabs' `Global-MMLU` translations, use the helper script `aryan/run_multilingual_similarity.py` (relative to the project root).
+- Example command (translates the medical task into Simplified Chinese, Spanish, and French while keeping English prompts) on a Studio workspace path:
+
+  ```
+  python3 aryan/run_multilingual_similarity.py \
+    --model_path /teamspace/studios/this_studio/aryan/models/llama3-8b \
+    --task_name medical \
+    --num_samples 20 \
+    --global_languages zh es fr \
+    --device_map auto
+  ```
+
+- Ensure the `CohereLabs/Global-MMLU` dataset is available locally or cached via `datasets` so the script can load the language-specific splits.
