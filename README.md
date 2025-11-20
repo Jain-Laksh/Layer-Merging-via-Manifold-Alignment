@@ -1,4 +1,4 @@
-# Beyond Naive Merging: Enhancing LLM Compression via Alpha Optimization, Task-Specific Similarity, and Neural Alignment
+# Beyond Naive Merging: Enhancing LLM Compression via Alpha Optimization, Task-Specific Similarity, and Neural Alignment ([Website](https://nishchaybhutoria.github.io/cs613-project-website))
 
 > This is a course project for **CS 613: Natural Language Processing** at **IIT Gandhinagar**.
 >
